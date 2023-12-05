@@ -9,13 +9,11 @@ export const mainConfig: Configuration = {
    */
   entry: './src/index.ts',
   // Put your normal webpack config below here
+  node: { __dirname: true },
   module: {
     rules,
   },
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json'],
   }
-  // externals: {
-  //   usb: 'commonjs usb'
-  // }
 };
